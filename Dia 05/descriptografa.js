@@ -6,7 +6,7 @@ const d = ['d',3,0];
 const e = ['e',4,0];
 
 const f = ['f',0,1];
-const g = ['g',1,2];
+const g = ['g',1,1];
 const h = ['h',2,1];
 const letraI = ['i',3,1];
 const j = ['j',4,1];
@@ -43,7 +43,7 @@ inversa[0][1]+somenteNumeros[1]*inversa[1][1]];
 
 for (let i = 0; i < alfabeto.length ; i++){
     if (produto[0] == alfabeto[i][1] & produto[1] == alfabeto[i][2]){
-        document.body.innerHTML += `Sua letra é <b> ${alfabeto[i][0]}</b>` 
+        document.body.innerHTML += `Sua letra é <b> ${alfabeto[i][0]}</b> <br />` 
     }
 
 

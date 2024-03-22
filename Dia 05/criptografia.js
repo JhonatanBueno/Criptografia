@@ -7,7 +7,7 @@ const d = ['d',3,0];
 const e = ['e',4,0];
 
 const f = ['f',0,1];
-const g = ['g',1,2];
+const g = ['g',1,1];
 const h = ['h',2,1];
 const letraI = ['i',3,1];
 const j = ['j',4,1];
