@@ -9,7 +9,7 @@ const f = ['f',0,1];
 const g = ['g',1,1];
 const h = ['h',2,1];
 const letraI = ['i',3,1];
-const j = ['j',4,1];
+const letraJ = ['j',4,1];
 
 const k = ['k',0,2];
 const l = ['l',1,2];
@@ -34,18 +34,21 @@ const espaço = [1,5];
 const pFinal = [2,5];
 const virgula = [3,5];
 const interroga = [4,5];
-const alfabeto = [letraA,b,c,d,e,f,g,h,letraI,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+const alfabeto = [letraA,b,c,d,e,f,g,h,letraI,letraJ,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
 const numeros = prompt("Digite somente os números, separados por vírgula referentes a sua mensagem");
 const somenteNumeros = numeros.split(',');
 console.log(somenteNumeros);
-const produto = [somenteNumeros[0]*inversa[0][0] + somenteNumeros[1]*inversa[1][0],somenteNumeros[0]*
-inversa[0][1]+somenteNumeros[1]*inversa[1][1]];
 
+for (let j = 0 ; j < somenteNumeros.length ; j++){
 for (let i = 0; i < alfabeto.length ; i++){
-    if (produto[0] == alfabeto[i][1] & produto[1] == alfabeto[i][2]){
-        document.body.innerHTML += `Sua letra é <b> ${alfabeto[i][0]}</b> <br />` 
+    const produto = [somenteNumeros[j]*inversa[0][0] + somenteNumeros[j+1]*inversa[1][0],somenteNumeros[j]*
+inversa[0][1]+somenteNumeros[j+1]*inversa[1][1]];
+        if (produto[0] == alfabeto[i][1] & produto[1] == alfabeto[i][2]){
+            console.log(produto)
+           document.getElementById('mexe').innerHTML += `Sua letra é <b> ${alfabeto[i][0]}</b> <br />` 
     }
 
 
-
+}
+j+=1;
 }
